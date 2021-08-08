@@ -1,0 +1,57 @@
+.productHighlightWrapper--collection {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 200px;
+}
+
+.productHighlightText {
+  background: antiquewhite;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+/*QUITAR ICONO CHIQUITO MOTO*/
+:global(.vtex-product-highlights-2-x-productHighlightWrapper)
+{
+  display: none;
+}
+/*QUITAR AGREGAR A SU CARRITO
+.justify-center :global(.vtex-add-to-cart-button-0-x-buttonText)
+{
+  visibility: hidden;
+}
+/*AGREGAR VER PRODUCTO
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf)
+:global(.vtex-button)::before
+{
+  
+  content: "VER PRODUCTO";
+  visibility: visible;
+}
+/*POSICIONAR EN MEDIO 
+:global(.vtex-add-to-cart-button-0-x-buttonDataContainer)
+{
+  position: relative;
+  left: 2.25em;
+  top: 0.5em;
+}
+*/
+
+
+:global(.vtex-menu-2-x-styledLinkContent--credito)
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  transition: all 0.5s ease;
+  
+}
+:global(.vtex-menu-2-x-styledLinkContent--credito):hover
+{
+  
+  background: #f0f0f0;
+  padding: 8px;
+  border-radius: 15px;
+  color: #03044e;
+}
+

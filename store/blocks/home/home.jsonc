@@ -1,0 +1,237 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "iframe#altocilindraje",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      // "list-context.image-list#solicitudCredito",
+      "__fold__.experimentalLazyAssets",
+     // "flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "rich-text#engines-title",
+      "flex-layout.row#motorfueradeborda",
+      
+      "list-context.image-list#servicios",
+      "list-context.image-list#suscribete",
+      //"newsletter",    
+      // "iframe#map",
+      "iframe#feed"
+      
+      
+      
+      
+    ]
+  },
+
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/moto-suzuki-fw110.jpg",
+          "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/moto-suzuki-fw110.jpg"
+        },
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/banner_suzuki_home_2.jpg",
+          "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/banner_suzuki_home_2.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Motocicletas",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+     
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "137"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  
+  "rich-text#engines-title": {
+    "props": {
+      "text": "## Motores fuera de borda",
+      "blockClass": "shelfTitle"
+    }
+  },
+  
+   
+
+  "flex-layout.row#motorfueradeborda": {
+    "children": ["list-context.product-list#motorfueradeborda"]
+  },
+  "list-context.product-list#motorfueradeborda": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#motorfueradeborda-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "138",
+      "buyButtonText" : "comprar"
+      
+    }
+  },
+  "slider-layout#motorfueradeborda-products": {
+    "props": {
+    
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "buyButtonText" : "comprar",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "list-context.image-list#suscribete": {
+    "children": ["slider-layout#suscribete"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/suscribete-f-e.jpg",
+          "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/suscribete-f-m.jpg"
+        }
+      ]
+    }
+  }, 
+  "list-context.image-list#solicitudCredito": {
+    "children": ["slider-layout#suscribete"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/solicita_credito_web_11.png",
+          "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/solicita_credito_web_11_m.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#suscribete": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "iframe#altocilindraje": {
+    "props": {
+      "width": "100%",
+      "height":"620px",
+      "scrolling":"no" ,
+      "frameborder":"0",
+      "overflow": "hidden",
+      "blockClass": "altocilindrajem",
+      "allowfullscreen":"true",
+      "allowtransparency":"true", 
+      "src": "https://site.comandato.com/slider-suzuki/html/motos-home-suzuki.html"
+    }
+  },
+
+    // "iframe#map": {
+      // "props": {
+        // "width": "100%",
+        // "height":"640px",
+        // "blockClass":"tiendas",
+        // "src": "https://site.comandato.com/tiendas/"
+      // }
+    // },
+    "iframe#feed": {
+      "props": {
+        "width": "100%",
+        "height":"720px",
+        "scrolling":"no" ,
+        "frameborder":"0",
+        "allowfullscreen":"true",
+        "allowtransparency":"true", 
+        "src": "https://consultordigitalec.com/suzuki/feed-2/"
+      }
+    },
+
+    "list-context.image-list#servicios": {
+      "children": ["slider-layout#servicios"],
+      "props": {
+        "height": 720,
+        "images": [
+          {
+            "image": "https://suzukiecuador.vteximg.com.br/arquivos/agendatumantenimiento.jpg",
+            "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/agendatumantenimiento.jpg"
+          },
+          {
+            "image": "https://suzukiecuador.vteximg.com.br/arquivos/serviciotecnicosuzuki.jpg",
+            "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/serviciotecnicosuzuki.jpg"
+          },
+          {
+            "image": "https://suzukiecuador.vteximg.com.br/arquivos/repuestos-suzuki.jpg",
+            "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/repuestos-suzuki.jpg"
+          },
+          {
+            "image": "https://suzukiecuador.vteximg.com.br/arquivos/mantenimientosuzuki.jpg",
+            "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/mantenimientosuzuki.jpg"
+          }
+          
+        ]
+      }
+    },
+    "slider-layout#servicios": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "carousel"
+      }
+    }
+
+
+
+}

@@ -1,0 +1,71 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop"
+      
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "blockClass": "credito",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://creditodirecto.comandato.com/?moto=1",
+        "noFollow": false,
+        "tagTitle": "Solicita tu crédito directo",
+        "text": "SOLICITA TU CRÉDITO DIRECTO"
+      }
+    }
+  },
+  "menu-item#noticias": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Noticias",
+        "text": "Noticias"
+      }
+    }
+  },
+  "menu-item#club": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Club",
+        "text": "Club"
+      }
+    }
+  },
+  "menu-item#contactanos": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Contactanos",
+        "text": "Contactanos"
+      }
+    }
+  }
+    
+  
+}

@@ -1,0 +1,333 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRowContent--main-header {
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: poppins;
+}
+
+
+.flexRow--deals {
+  background-color: #e10c1a;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1120px) {
+  .flexCol--cards-sustainability-wrapper {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px
+  }
+}
+
+.flexColChild--sustainability-wrapper{
+  margin: auto;
+}
+
+ .altocilindraje {
+  overflow: hidden;
+ }
+
+ .formulario{
+  margin-top: -2354px;
+ }
+
+ :global(.vtex-iframe-0-x-container--formulario)
+{
+  margin-top: -2754px;
+  z-index: 1;
+  position: absolute;
+}
+
+:global(.vtex-iframe-0-x-container--360)
+{
+  margin-top: -6em;
+  margin-bottom: -6em;
+}
+
+
+ /*CSS PARA LA FICHA TECNICA
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecificationGroup)
+{
+  width: 100%;
+  
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification)
+{
+  background: #033872;
+  float: left;
+  height: 70px;
+  border-top: 0.2px white solid;
+  border-right:0.2px white solid ;
+}
+:global(.vtex-store-components-3-x-container)
+{
+  color: white; 
+}
+
+:global(.vtex-product-specifications-1-x-groupName)
+{
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+padding: 5px;
+width: 100% !important;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification)
+{
+  width: 50% !important;
+}
+:global(.vtex-flex-layout-0-x-flexRow--productSpecificationGroupName){
+  
+  background: #033872 !important;
+  border-right: 0.2px white solid !important;
+}
+:global(.vtex-product-specifications-1-x-specificationName)
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+:global(.vtex-store-components-3-x-container)
+{
+  width: 100% !important;
+}*/
+
+:global(.vtex-menu-2-x-menuItem--credito)
+{
+  border-right: 1px solid #03044e !important;
+}
+
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+{
+  width: 40%;
+}
+
+:global(.vtex-iframe-0-x-container--altocilindrajem)
+{
+  padding-top: 40px;
+}
+
+:global(.vtex-slider-layout-0-x-imageElement--banerfinal)
+{
+  padding-top: 40px;
+}
+/*FICHA TECNICA V2*/
+/*CONTENEDOR PADRE*/
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecificationGroup)
+{
+margin: auto;
+width: 70%;
+opacity: .75;
+background-color: white;
+
+}
+/*FICHA TECNICA*/
+:global(.vtex-product-specifications-1-x-groupName)
+{
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  font-size: xx-large !important;
+  text-align: center;
+  letter-spacing: 3px;
+  
+}
+/*IMAGEN*/
+:global(.vtex-flex-layout-0-x-flexRow--productSpecificationGroup)
+{
+  background-image: url('https://feralf.com/images/Autos/Octubre_17/Suzuki/Suzuki_V-Strom_250_cover_fx.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px 20px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--productSpecificationGroupName)
+{
+  background: none !important;
+  color: #727273;
+  padding: 30px !important;
+
+}
+:global(.vtex-product-specifications-1-x-specificationName)
+{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+}
+
+
+
+/*BOTONES PRODUCT PAGE */
+
+
+  
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      justify-content: center;
+  }
+  
+  
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--boton1)
+  {
+    width: 50%;
+   
+    
+  }
+ 
+  :global(.vtex-flex-layout-0-x-flexRowContent--boton2)
+  {
+    width: 50%;
+  
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--boton3)
+  {
+    width: 50%;
+  
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--buyNowButtons )
+  {
+    width: 50%;
+    color: #fff;
+    background-color: #193d8a;
+  
+  }
+  
+   :global(.vtex-flex-layout-0-x-flexRow--buyNowButtonw )
+  {
+    width: 50%;
+    color: #fff;
+    background-color: #bdc5d8;
+  
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--buyNowButtonf )
+  {
+    width: 50%;
+    color: #fff;
+  
+  }
+ /*color de botones  product page */
+  .flexRow--buyNowButtons :global(.vtex-button) {
+    background-color: #193d8a;
+    border-color: #002d8f;
+  }
+
+  .flexRow--buyNowButtonw :global(.vtex-button) {
+    background-color: #25d366;
+    border-color: #02ca4d;
+  }
+
+  .flexRow--buyNowButtonf :global(.vtex-button) {
+    background-color: #cb2128;
+    border-color: #bc030a;
+  }
+
+  .flexRow--buyNowButtons :global(.vtex-button) :hover
+  {
+    opacity: .8;
+    transition: opacity .15s ease-in;
+    outline: 0;
+  }
+  .flexRow--buyNowButtonw :global(.vtex-button) :hover
+  {
+    opacity: .8;
+    transition: opacity .15s ease-in;
+    outline: 0;
+  }
+  .flexRow--buyNowButtonf :global(.vtex-button) :hover
+  {
+    opacity: .8;
+    transition: opacity .15s ease-in;
+    outline: 0;
+  }
+  
+
+
+  :global( .vtex-store-components-3-x-fadeBottom){
+    height: 100%;
+    background-image: none;
+  }

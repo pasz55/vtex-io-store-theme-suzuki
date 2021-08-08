@@ -1,0 +1,371 @@
+{
+  "store.product": {
+    "children": [
+      "list-context.image-list#topbaner",
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "list-context.image-list#iconos",
+      "list-context.image-list#descripcion",
+      "iframe#360",
+      "flex-layout.row#description",
+      
+      //"flex-layout.row#specifications-title",
+      "product-specification-group#table",
+      "shelf.relatedProducts",
+      "list-context.image-list#productbaner",
+      "iframe#formulario",
+      //"product-reviews",
+      "product-questions-and-answers"
+    ]
+  },
+  // "flex-layout.row#specifications-title": {
+    // "children": [
+      // "rich-text#specifications"
+    // ]
+  // },
+  // "rich-text#specifications": {
+    // "props": {
+      // "text": "##### Descripción del producto"
+    // }
+  // },
+  
+  "list-context.image-list#topbaner": {
+    "children": ["slider-layout#topbaner"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/banner_suzuki_general_opcion3.jpg",
+          "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/banner_suzuki_general_opcion3.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#topbaner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "list-context.image-list#descripcion": {
+    "children": ["slider-layout#descripcion"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/motores-dsc.png",
+          "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/motores-dsc.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#descripcion": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "list-context.image-list#iconos": {
+    "children": ["slider-layout#iconos-images"],
+    "props": {
+      "height": 200,
+      "images": [
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/motor.png",
+          "description": "Descripcion"
+        },
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/transmision.png",
+          "description": "Descripcion"
+        },
+        {
+          "image": "https://suzukiecuador.vteximg.com.br/arquivos/3.png",
+          "description": "Descripcion"
+        }
+      ]
+    }
+  },
+  "slider-layout#iconos-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7
+    },
+    "children": ["product-description"]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "hasMoreThanOne" : true
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-rating-summary",
+      "flex-layout.row#list-price-savings",
+      //"flex-layout.row#selling-price",
+      //"product-spot-price", 
+      // "product-installments-list",
+      // "product-installments-list-item",
+      "product-installments",
+      "product-price-savings",
+      "product-spot-price-savings",
+      "product-list-price-range",
+      // "product-selling-price-range",
+      // "product-seller-name",
+      "product-separator",
+      "product-identifier.product",
+      "sku-selector",
+      //"product-quantity",
+      "product-assembly-options",
+      "product-gifts",
+      "flex-layout.row#buyNowButtons",
+      "flex-layout.row#buyNowButtonw",
+      "flex-layout.row#buyNowButtonf",
+      
+
+      //"availability-subscriber",
+      // "shipping-simulator",
+      "share#default"
+    ]
+  },
+
+
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["vtex.store-components:product-name"]
+  },
+
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
+    }
+  },  
+
+  "flex-layout.row#buy-button": {
+    "props": {
+      "blockClass": "boton1",
+      "marginTop": 4,
+      "marginBottom": 2,
+      "text": "VER MÁS"
+    },
+    "children": ["add-to-cart-button"]
+  },
+
+
+//botones
+//boton solicitud
+//PADRE
+  "flex-layout.row#buyNowButtons": {
+    "props": {
+      "blockClass": "buyNowButtons",
+      "marginTop": 4,
+      "marginBottom": 2
+    },
+    "children": [
+      "add-to-cart-button#buyNows"
+    ]
+  },
+//HIJO 
+  "add-to-cart-button#buyNows": {
+    "props": {
+      "text": "SOLICITAR PRODUCTO", 
+      "isOneClickBuy": true,
+      "onClickEventPropagation":  "enabled",
+      "blockClass": "buyNows"
+    }
+  },
+
+  "flex-layout.row#buyNowButtonw": {
+    "props": {
+      "blockClass": "buyNowButtonw",
+      "marginTop": 4,
+      "marginBottom": 2
+    },
+    "children": [
+      "add-to-cart-button#buyNoww"
+    ]
+  },
+
+  "add-to-cart-button#buyNoww": {
+    "props": {
+      "text": "SOLICITAR POR WHATSAPP", 
+      "isOneClickBuy": true,
+      "onClickEventPropagation":  "enabled",
+      "blockClass": "buyNoww"
+    }
+  },
+
+  "flex-layout.row#buyNowButtonf": {
+    "props": {
+      "blockClass": "buyNowButtonf",
+      "marginTop": 4,
+      "marginBottom": 2
+    },
+    "children": [
+      "add-to-cart-button#buyNowf"
+    ]
+  },
+
+  "add-to-cart-button#buyNowf": {
+    "props": {
+      "text": "VER FICHA TÉCNICA", 
+      "isOneClickBuy": true,
+      "onClickEventPropagation":  "enabled",
+      "blockClass": "buyNowf"
+    }
+  },
+  
+//  El bloque le permite elegir entre diferentes tipos de recomendaciones.
+//  La propiedad recomendación puede ser uno de los siguientes valores: 
+//  .shelf.relatedProducts['similars', 'view', 'buy', 'accessories', 'viewAndBought', 'suggestions']
+  
+"list-context.image-list#productbaner": {
+  "children": ["slider-layout#productbaner"],
+  "props": {
+    "height": 720,
+    "images": [
+      {
+        "image": "https://suzukiecuador.vteximg.com.br/arquivos/BANNER_SUZUKI_UK.jpg",
+        "mobileImage": "https://suzukiecuador.vteximg.com.br/arquivos/BANNER_SUZUKI_UK.jpg"
+      }
+    ]
+  }
+},
+"slider-layout#productbaner": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "banerfinal"
+  }
+},
+
+
+
+"iframe#360": {
+  "props": {
+    "width": "100%",
+    "height":"720px",
+    "scrolling":"no" ,
+    "blockClass": "360",
+    "frameborder":"0",
+    "allowfullscreen":"true",
+    "allowtransparency":"true", 
+    "src": "https://site.comandato.com/360/intruder/"
+  }
+},
+
+"iframe#formulario": {
+  "props": {
+    "width": "100%",
+    "height":"720px",
+    "scrolling":"no" ,
+    "blockClass": "formulario",
+    "frameborder":"0",
+    "allowfullscreen":"true",
+    "allowtransparency":"true", 
+    "margin-top": "-2354px",
+    "src": "https://www.comandato.com/formulario-suzuki"
+  }
+},
+
+
+
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
+  }
+}
