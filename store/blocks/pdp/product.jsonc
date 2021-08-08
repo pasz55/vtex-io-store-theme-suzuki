@@ -13,7 +13,7 @@
       "product-specification-group#table",
       "shelf.relatedProducts",
       "list-context.image-list#productbaner",
-      "iframe#formulario",
+      //"iframe#formulario",
       //"product-reviews",
       "product-questions-and-answers"
     ]
