@@ -4,9 +4,9 @@
       "list-context.image-list#topbaner",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "list-context.image-list#iconos",
-      "list-context.image-list#descripcion",
-      "iframe#360",
+     // "list-context.image-list#iconos",
+     // "list-context.image-list#descripcion",
+     //"iframe#360",
       "flex-layout.row#description",
       
       //"flex-layout.row#specifications-title",
